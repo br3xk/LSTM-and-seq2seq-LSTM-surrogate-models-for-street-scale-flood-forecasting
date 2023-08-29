@@ -2,7 +2,7 @@
 """
 Created on Thu Mar 16 16:00:10 2023
 
-@author: steven (original), binata (modified)
+@author: steven & diana (original), binata (modified)
 """
 
 import pandas as pd
