@@ -10,6 +10,8 @@ It predicts future water depth on train and test data and saves predictions to C
 N.B.
 
 For 8-hr forecasting model, replace => n_ahead = 4 with n_ahead = 8
+
 For 4-hr forecasting model w/o wl features, replace => x_cols = ['w_depth','ELV', 'DTW', 'TWI'] with x_cols = ['ELV', 'DTW', 'TWI']
+
 For 4-hr forecasting model w/o spatial features, replace => x_cols = ['w_depth','ELV', 'DTW', 'TWI'] with x_cols = ['w_depth']
 
