@@ -1,5 +1,5 @@
 # LSTM-and-seq2seq-LSTM-surrogate-models-for-street-scale-flood-forecasting
-4-hr LSTM Forecasting Model:
+4-hr LSTM and seq2seq LSTM Forecasting Model:
 This network uses ELV, TWI, DTW + last 4 RAINFALL, TIDE and WATERDEPTH + future 4 RAINFALL, and TIDE to predict future 4 WATERDEPTH for flood-prone streets of Norfolk, VA
 
     flood-prone streets = 22
