@@ -4,6 +4,6 @@ The script loads node_data, tide_data and weather_data from the relational datab
 The input data is available on Hydroshare (Roy, B., 2023).
 
 
-References
+References:
 
 Roy, B. (2023). Input data for LSTM and seq2seq LSTM surrogate models for multi-step-ahead street-scale flood forecasting in Norfolk, VA, HydroShare, http://www.hydroshare.org/resource/e5d6d32a320f4bcca679e0bf388c2bcc
