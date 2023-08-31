@@ -6,10 +6,10 @@ Created on Thu Mar 16 17:32:04 2023
 """
 
 """
-4-hr seq2seq LSTM Forecasting Model:
+This is the script for 4-hr seq2seq LSTM Forecasting Model:
 This network uses ELV, TWI, DTW + last 4 RAINFALL, TIDE and WATERDEPTH + future 4 RAINFALL, and TIDE to predict future 4 WATERDEPTH for flood-prone streets of Norfolk, VA
 
-    floodprone streets = 22
+    flood-prone streets = 22
     n_back=4 and n_ahead = 4
     input = ELV, TWI, DTW,
             RH (past [t-3, t-2, t-1, t] and future [t+1, t+2, t+3, t+4] timesteps),
@@ -17,15 +17,14 @@ This network uses ELV, TWI, DTW + last 4 RAINFALL, TIDE and WATERDEPTH + future 
             w_depth (past [t-3, t-2, t-1, t] timesteps) 
     output = w_depth (future [t+1, t+2, t+3, t+4] timesteps)
 
-It loads node_data, tide_data and weather_data from relational database, and prepares 3D tensor train and test data using lstm_data_tools.py for 22 flood-prone streets.
-It hypertunes model from a set of hyperparamters using Bayesian optimization technique and then, saves best model and hyperparaemeters.
-It predicts future water depth on train and test data, saves predictions to csv files. It also plots water depth from LSTM and groundturh TUFLOW for 6 streets.
-"""
+It loads node_data, tide_data and weather_data from the relational database and prepares 3D tensor train and test data using lstm_data_tools.py for 22 flood-prone streets.
+It hypertunes the model from a set of hyperparameters using the Bayesian optimization technique and then saves the best model and hyperparameters.
+It predicts future water depth on train and test data and saves predictions to CSV files. It also plots water depth from LSTM and ground-truth TUFLOW for 6 streets.
 
-"""
+
 For 8-hr forecasting model, replace => n_ahead = 4 with n_ahead = 8
 For 4-hr forecasting model w/o wl features, replace => x_cols = ['w_depth','ELV', 'DTW', 'TWI'] with x_cols = ['ELV', 'DTW', 'TWI']
-For 4-hr forecasting model w/o sptial features, replace => x_cols = ['w_depth','ELV', 'DTW', 'TWI'] with x_cols = ['w_depth']
+For 4-hr forecasting model w/o spatial features, replace => x_cols = ['w_depth','ELV', 'DTW', 'TWI'] with x_cols = ['w_depth']
 """
 
 
