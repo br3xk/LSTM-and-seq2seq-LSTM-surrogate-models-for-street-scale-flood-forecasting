@@ -6,7 +6,7 @@ This network uses topographic features (ELV, TWI, DTW) + last 4 (Rainfall, Tide 
 
 2. "lstm_44_pred.py" or "s2s_lstm_44_pred.py" loads the best model, predicts future water depth for train and test data and saves predictions to CSV files. It also plots water depth from LSTM/seq2seq LSTM and ground-truth TUFLOW for 6 streets. 
 
-The input data is available on Hydroshare (Roy, 2023).
+The input data is available on Hydroshare (Roy et al., 2023).
 
 References:
 
