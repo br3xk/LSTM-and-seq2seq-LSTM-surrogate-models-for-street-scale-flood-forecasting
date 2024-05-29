@@ -18,7 +18,7 @@ This network uses ELV, TWI, DTW + last 4 (Rainfall, Tide and Waterdepth) timeste
     output = w_depth (future [t+1, t+2, t+3, t+4] timesteps)
 
 It loads node_data, tide_data and weather_data from the relational database and prepares 3D tensor train and test data using lstm_data_tools.py for 22 flood-prone streets.
-Then it loads the best model, predicts future water depth on train and test data and saves predictions to CSV files. It also plots water depth from LSTM and ground-truth TUFLOW for 6 streets.
+Then it loads the best model, predicts future water depth for train and test data and saves predictions to CSV files. It also plots water depth from LSTM and ground-truth TUFLOW for 6 streets.
 
 For 8-hr forecasting model, replace => n_ahead = 4 with n_ahead = 8
 For 4-hr forecasting model w/o wl features, replace => x_cols = ['w_depth','ELV', 'DTW', 'TWI'] with x_cols = ['ELV', 'DTW', 'TWI']
