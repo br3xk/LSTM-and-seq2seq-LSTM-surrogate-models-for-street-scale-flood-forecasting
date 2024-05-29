@@ -4,7 +4,7 @@ This network uses ELV, TWI, DTW + last 4 (Rainfall, Tide and Waterdepth) timeste
 
 1. "lstm_44_hyper.py" or "s2s_lstm_44_hyper.py" loads node_data, tide_data and weather_data from the relational database and prepares 3D tensor train and test data using "lstm_data_tools.py" for 22 flood-prone streets. Then, it hypertunes the model from a set of hyperparameters using the Bayesian optimization and then saves the best model and hyperparameters. 
 
-2. "lstm_44_pred.py" or "s2s_lstm_44_pred.py" loads the best model, predicts future water depth on train and test data and saves predictions to CSV files. It also plots water depth from LSTM/seq2seq LSTM and ground-truth TUFLOW for 6 streets. 
+2. "lstm_44_pred.py" or "s2s_lstm_44_pred.py" loads the best model, predicts future water depth for train and test data and saves predictions to CSV files. It also plots water depth from LSTM/seq2seq LSTM and ground-truth TUFLOW for 6 streets. 
 
 The input data is available on Hydroshare (Roy, 2023).
 
