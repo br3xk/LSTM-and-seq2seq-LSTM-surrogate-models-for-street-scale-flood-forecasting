@@ -11,3 +11,6 @@ The input data is available on Hydroshare (Roy et al., 2023).
 References:
 
 Roy, B., Goldenberg, S., & McSpadden, D. (2023). Input data for LSTM and seq2seq LSTM surrogate models for multi-step-ahead street-scale flood forecasting in Norfolk, VA. HydroShare. http://www.hydroshare.org/resource/e5d6d32a320f4bcca679e0bf388c2bcc
+
+Journal Article: 
+Roy, B., Goodall, J. L., McSpadden, D., Goldenberg, S., & Schram, M. (2025). Forecasting Multi-Step-Ahead Street-Scale nuisance flooding using seq2seq LSTM surrogate model for Real-Time applications in a Coastal-Urban city. Journal of Hydrology, 132697.
